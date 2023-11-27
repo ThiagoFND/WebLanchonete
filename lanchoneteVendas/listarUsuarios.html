@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/redirecionar.js" defer></script>
+    <script src="js/user2.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <title>Sua Página</title>
+</head>
+<body>
+    <div class="lateralEsquerdaDados"><br>
+        <a class="icons">B</a>
+        <a class="icons">E</a>
+        <a class="icons">M</a>
+        <a class="icons">V</a>
+        <a class="icons">I</a>
+        <a class="icons">N</a>
+        <a class="icons">D</a>
+        <a class="icons">O</a><br>
+        <hr color="black"><br>
+        <div class="moving-phrase">BEM VINDO AO SISTEMA, ESSE SOFTWARE FOI FEITO PARA
+            TE SATISFAZER DAS MELHORES FORMAS POSSÍVEIS, PARA QUAISER PROBLEMAS ACIONE O SUPORTE
+            ABRAÇOS!!
+        </div>
+        <div class="menu-container">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="menu-options">
+                <select class="cimacol1" id="menuOpcoesLogin">
+                    <option value="">Login</option>
+                    <option value="index.html">Login</option>
+            </select>
+            <select class="cimacol1" id="menuOpcoes">
+                <option value="">Vendas</option>
+                <option value="vendas.html">Cadastrar Vendas</option>
+                <option value="listarVendas.html">Listar Vendas</option>
+                <option value="deletarVendas.html">Deletar Vendas</option>
+            </select>
+            <select class="cimacol1" id="menuOpcoesGastos">
+                <option value="">Gastos</option>
+                <option value="gastos.html">Cadastrar Gastos</option>
+                <option value="listarGastos.html">Listar Gastos</option>
+                <option value="deletarGastos.html">Deletar Gastos</option>
+            </select>
+            <select class="cimacol1" id="menuOpcoesProdutos">
+                <option value="">Produtos Faltas</option>
+                <option value="produtos.html">Cadastrar Produtos</option>
+                <option value="listarProdutos.html">Listar Produtos</option>
+                <option value="deletarProdutos.html">Deletar Produtos</option>
+            </select>
+            <select class="cimacol1" id="menuOpcoesUsuarios">
+                <option value="">Usuário</option>
+                <option value="cadastroUser.html">Cadastrar Usuários</option>
+                <option value="listarUsuarios.html">Listar Usuários</option>
+            </select>
+    </div>
+</div>
+</div>
+    <div class="container">
+        <div class="lista-users">
+            <!-- A lista de dados será exibida aqui -->
+        </div>
+    </div>
+    <button class="botaoApre" onclick="redirecionarParaInstagram()">
+        <img class="ins" src="imagens/instagram-icone-icon.png" alt="">
+    </button>
+    <button class="botaoApre" onclick="redirecionarParaLinkedin()">
+        <img class="ins" src="imagens/linkedin.webp" alt="">
+    </button>
+    <button class="botaoApre" onclick="redirecionarParaWhatsapp()">
+        <img class="ins" src="imagens/whatsapp.webp" alt="">
+    </button>
+    <button class="botaoApre" onclick="redirecionarParaGithub()">
+        <img class="ins" src="imagens/github.webp" alt="">
+    </button>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/showpassword.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/redirecionar.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="lateralEsquerdaDados"><br>
+        <a class="icons">B</a>
+        <a class="icons">E</a>
+        <a class="icons">M</a>
+        <a class="icons">V</a>
+        <a class="icons">I</a>
+        <a class="icons">N</a>
+        <a class="icons">D</a>
+        <a class="icons">O</a><br>
+        <hr color="black"><br>
+        <div class="moving-phrase">BEM VINDO AO SISTEMA, ESSE SOFTWARE FOI FEITO PARA
+            TE SATISFAZER DAS MELHORES FORMAS POSSÍVEIS, PARA QUAISER PROBLEMAS ACIONE O SUPORTE
+            ABRAÇOS!!
+        </div>
+        <div class="menu-container">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="menu-options">
+            <select class="cimacol1" id="menuOpcoesLogin">
+                <option value="">Login</option>
+                <option value="index.html">Login</option>
+        </select>      
+    </div>
+</div>
+</div>
+    <div class="fundologin">
+        <div class="loginn">
+            <h1 class="pedirFoto">
+                <a class="icons1">L</a>
+                <a class="icons1">O</a>
+                <a class="icons1">G</a>
+                <a class="icons1">I</a>
+                <a class="icons1">N</a>
+            </h1>
+            <form id="login-form">
+                <input class="pedir1" type="text" id="login" name="login" placeholder="login" required><br><br>
+                <input class="pedir1" type="password" id="password" name="password" placeholder="password" required><br><br>
+                <input type="checkbox" id="showPasswordCheckbox"> Mostrar Senha <br><br>
+                <button class="botoes" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <button class="botaoApre" onclick="redirecionarParaInstagram()">
+        <img class="ins" src="imagens/instagram-icone-icon.png" alt="">
+    </button>
+    <button class="botaoApre" onclick="redirecionarParaLinkedin()">
+        <img class="ins" src="imagens/linkedin.webp" alt="">
+    </button>
+    <button class="botaoApre" onclick="redirecionarParaWhatsapp()">
+        <img class="ins" src="imagens/whatsapp.webp" alt="">
+    </button>
+    <button class="botaoApre" onclick="redirecionarParaGithub()">
+        <img class="ins" src="imagens/github.webp" alt="">
+    </button>
+</body>
+</html>

@@ -1,0 +1,456 @@
+body {
+    background-image: url("../imagens/Home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    html,body {
+        height: 100%;
+        margin: 0;
+    }
+    
+}
+
+.cima {
+    background-color: rgb(56, 53, 53);
+    width: 99vw;
+    height: 3vw;
+    padding-top: 2vw;
+    text-align: center;
+    position: fixed;
+    
+}
+
+.container {
+    position: fixed;
+    top: 20%; /* Define a posição vertical desejada do contêiner */
+    left: 0%; /* Define a posição horizontal desejada do contêiner */
+    width: 110%; /* Largura do contêiner */
+    height: 70vh; /* Altura do contêiner */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: auto; /* Adicione uma barra de rolagem se o conteúdo for maior do que a altura do contêiner */
+}
+
+/* Estilos para telas maiores (desktop, tablet, etc.) */
+.lista-users,
+.lista-vendas,
+.lista-produtos,
+.lista-gastos {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 96vw; /* 96% da largura da viewport */
+    padding: 2vw; /* 2% do espaço da viewport nas laterais */
+    border: 2px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sutil sombra */
+    font-size: 1vw; /* Tamanho de fonte relativo à viewport */
+}
+
+/* Estilos para telas menores (celulares) */
+@media only screen and (max-width: 600px) {
+    .lista-users,
+    .lista-vendas,
+    .lista-produtos,
+    .lista-gastos {
+        width: 90vw; /* Ajuste a largura conforme necessário para telas menores */
+        font-size: 3vw; /* Ajuste o tamanho da fonte conforme necessário para telas menores */
+    }
+}
+
+
+.loginn {
+    position: fixed; /* Torna o elemento fixo na tela */
+    z-index: 999; /* Define um valor alto para z-index para sobrepor a todos os outros elementos */
+    margin-left: 8vw;
+    margin-top:3vw;
+    text-align: center;
+}
+
+.salgados {
+    width: 40vw;
+    position: fixed; /* Torna o elemento fixo na tela */
+    left: 70vw;
+    top: -4vw;
+}
+
+
+
+.lateralEsquerdaDados {
+    background-color: transparent;
+    backdrop-filter: blur(1.9px);
+    position: fixed;
+    width: 100%;
+    height: 13%;
+    margin-top: 0.1vw;
+    margin-left: 0vw;
+    box-shadow: 0 0 10px black, 0 0 20px black;
+    z-index: 2; /* Lateral à direita (pode ajustar z-index conforme necessário) */
+}
+
+/* Estilos para telas menores (celulares) */
+@media only screen and (max-width: 600px) {
+    .lateralEsquerdaDados {
+        width: 390px;
+        height: 10vh; /* Ajuste a altura conforme necessário para telas menores */
+        margin-top: 2vh; /* Ajuste a margem conforme necessário para telas menores */
+    }
+}
+.coxinhaprato {
+    width: 70vw;
+    position: fixed; /* Torna o elemento fixo na tela */
+    left: -10vw;
+    top: -17vw;
+    z-index: -5;
+    filter:drop-shadow(15px 7px 8px black);
+    transform: rotate(-20deg); /* Rotacionar 20 graus no sentido anti-horário */
+}
+
+
+.fundologin {
+    position: absolute;
+    background-color: rgb(56, 53, 53, );
+    backdrop-filter: blur(10px);
+    border-color: white;
+    width: 30%;
+    height: 45%;
+    margin-left: 30%;
+    margin-top: 12%;
+    text-align: center;
+    padding: 5%;
+    z-index: 1;
+}
+
+/* Adicione uma consulta de mídia para dispositivos com largura de tela até 768px */
+@media (max-width: 768px) {
+    .fundologin {
+        width: 60%;
+        margin-top: 60%;
+        margin-left: 10%;
+    }
+}
+
+.pedir1 {
+    padding: 0.5%;
+    font-size: 20px;
+    justify-content: center;
+    background-color: rgb(56, 53, 53);
+    color: white;
+    content: "";
+}
+
+.pedir12{
+    background-color: rgb(56, 53, 53);
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.icons {
+    color: white;
+    padding: 0.8vw;
+    text-align: center;
+    margin-left: 8vw;
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilos para telas menores (celulares) */
+@media only screen and (max-width: 600px) {
+    .icons {
+        padding: 11px; /* Ajuste o preenchimento conforme necessário para telas menores */
+        margin-left: 2vw; /* Ajuste a margem conforme necessário para telas menores */
+    }
+}
+
+.icons:hover {
+    box-shadow: 0 0 10px black;
+    transition: 0.2s;
+}
+
+.icons1 {
+    color: white;
+    padding: 0.8vw;
+    text-align: center;
+    margin-left: 0vw;
+}
+
+.contato-table,
+.usuario-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    z-index: 1;
+}
+
+/* Estilos para telas maiores (desktop, tablet, etc.) */
+.contato-table th,
+.contato-table td,
+.usuario-table th,
+.usuario-table td {
+    background-color: rgb(56, 53, 53);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Estilos para telas menores (celulares) */
+@media only screen and (max-width: 768px) {
+    .contato-table th,
+    .contato-table td,
+    .usuario-table th,
+    .usuario-table td {
+        border-color: white;
+        border: 2px;
+        background-color: rgb(56, 53, 53);
+        backdrop-filter: blur(5px);
+        display: grid;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        width: 76%;
+        padding: 5px; /* Ajuste o espaçamento para telas menores */
+    }
+}
+
+.contato-table th,
+.usuario-table th {
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.cimacol1 {
+    background-color: transparent;
+    font-size: 18px; /* Reduz o tamanho da fonte para evitar que o menu fique muito grande */
+    color: white; /* Cor do texto do menu */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border: none; /* Removido o border-color */
+    width: 60%; /* Ocupa toda a largura do menu */
+    padding: 10px 0; /* Espaçamento interno */
+    height: 6%;
+    margin-left: 20%;
+    z-index: 999;
+}
+
+.cimacol1:hover {
+    height: 6%;
+    background-color: rgb(56, 53, 53);
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+    text-decoration: underline;
+    border-style: solid;
+    border-color: blue;
+    z-index: 999;
+}
+
+.botoes {
+    width: 35%;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    top: 1vw;
+    font-size: 1vw;
+}
+
+
+.botoes:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.botoes:active {
+    color: #000;
+}
+.botoes:active::after {
+    background: transparent;
+}
+
+.botoes:hover:before {
+    opacity: 1;
+}
+
+.botoes:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(56, 53, 53);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width: 768px) {
+    .botoes {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff; /* Cor do ícone */
+    z-index: 99;
+}
+
+.menu-options {
+    display: none;
+    position: absolute;
+    margin-top: 40.6%; /* Espaçamento entre o ícone e o menu suspenso */
+    left: 0%; /* Alterado de "right" para "left" */
+    background-color: rgb(56, 53, 53, 0.8); /* Exemplo: valor alfa de 0.5 torna o fundo semi-transparente */
+    backdrop-filter: blur(10px);
+    width: 18%;
+    height: 1530%;
+    border: 1px solid black;
+    border-top: 0px;
+    z-index: 99;
+}
+
+.menu-options.active {
+    display: block;
+    z-index: 99;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        font-size: 16px; /* Reduz o tamanho do ícone para telas menores */
+        z-index: 999;
+    }
+
+    .menu-options {
+        margin-top: 201.3%;
+        width: 100%; /* Preenche a largura da tela */
+        height: 2000%; /* Preenche a altura da tela */
+        z-index: 99;
+        background-color: rgb(56, 53, 53); /* Exemplo: valor alfa de 0.5 torna o fundo semi-transparente */
+        border: 0px solid black;
+    }
+}
+
+#showPasswordCheckbox {
+    margin-top: 5px;
+}
+
+.moving-phrase {
+    position: absolute;
+    top: 60%; /* Posiciona a frase verticalmente ao meio */
+    left: 100%; /* Inicia fora da tela à direita */
+    white-space: nowrap; /* Evita que a frase quebre em várias linhas */
+    animation: moveLeft 55s linear infinite; /* Aplica a animação */
+    color: white;
+    font-weight: bold; /* Texto em negrito */
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 100%; /* Começa fora da tela à direita */
+    }
+    100% {
+        left: -100%; /* Move para fora da tela à esquerda */
+    }
+}
+
+.ins {
+    width: 25px;
+}
+
+.botaoApre,
+.outroBotao {
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 46%;
+    transition: 0.5s; /* Adicione uma transição suave para animação */
+}
+
+.botaoApre:hover {
+    background-color: rgb(56, 53, 53);
+    border: 2px;
+    border-color: red;
+    border-style: solid;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+
+.botaoApre-container {
+    display: flex;
+    justify-content: space-between; /* Isso alinhará os botões ao longo do eixo horizontal */
+    margin-top: 46%;
+}
+/* Adicionando uma media query para dispositivos menores */
+@media (max-width: 600px) {
+    .botaoApre,
+    .outroBotao {
+        width: 10vw;
+        height: 10vw;
+        margin-top: 94vh;
+    }
+
+    .botaoApre:hover {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .botaoApre-container {
+        flex-direction: column; /* Muda para empilhar os botões verticalmente */
+    }
+}
